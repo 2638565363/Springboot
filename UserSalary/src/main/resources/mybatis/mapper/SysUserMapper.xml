@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gui.mapper.SysUserMapper">
+
+<!-- select声明中有resultType，而update和insert中没有resultType -->
+  <insert id="insertSysUser" parameterType="com.gui.entity.SysUser">
+  	 insert into sys_user (username, password, password1) values (#{username}, #{password}, #{password1})
+  </insert>
+
+  <select id="selectByName" parameterType="String" resultType="com.gui.entity.SysUser">
+  	select * from sys_user where username = #{username}
+  </select>
+  
+  <select id="selectById" parameterType="Integer" resultType="com.gui.entity.SysUser">
+  	select * from sys_user where id = #{id}
+  </select>
+  
+  <delete id="deleteSysUser" parameterType="string">
+  	delete from sys_user where username = #{username}
+  </delete>
+  
+  <update id="updateSysUser" parameterType="com.gui.entity.SysUser">
+  	update sys_user set username=#{username} ,uname=#{uname}, sex=#{sex}, birth=#{birth}, home=#{home} where username=#{username}
+  </update>
+	
+  <insert id="insertInfoSysUser">
+  	insert into sys_user (username, uname, sex, birth, home, password, password1) values (#{username}, #{uname}, #{sex}, #{birth}, #{home}, #{password}, #{password1})
+  </insert>
+  
+  <select id="selectSysUser" resultType="com.gui.entity.SysUser">
+  	select username, uname, sex, birth, home from sys_user
+  </select>
+  
+</mapper>

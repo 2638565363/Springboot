@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gui.mapper.QueryTestMapper">
+
+<insert id="insertDataToTable" parameterType="com.gui.entity.Salary">
+	 insert into salary (id,name,sex,time,birth,salary,home) values (#{id},#{name},#{sex},#{time},#{birth},#{salary},#{home})
+</insert>
+
+</mapper>

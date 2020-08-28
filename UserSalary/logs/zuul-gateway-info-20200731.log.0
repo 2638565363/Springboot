@@ -1,0 +1,548 @@
+2020-07-31 15:05:02.110 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 10876 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-07-31 15:05:02.124 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-07-31 15:05:04.183 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-31 15:05:04.254 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 40ms. Found 0 JPA repository interfaces.
+2020-07-31 15:05:04.573 [main] WARN  o.m.s.mapper.ClassPathMapperScanner
+				-No MyBatis mapper was found in '[com.upload.mapper]' package. Please check your configuration.
+2020-07-31 15:05:04.958 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-07-31 15:05:05.020 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-07-31 15:05:05.022 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-07-31 15:05:05.023 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-07-31 15:05:05.024 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-07-31 15:05:05.025 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-07-31 15:05:05.026 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-07-31 15:05:05.026 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-07-31 15:05:05.377 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-07-31 15:05:05.989 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-07-31 15:05:05.996 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-07-31 15:05:07.396 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-07-31 15:05:07.419 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-07-31 15:05:07.420 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-07-31 15:05:07.421 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-31 15:05:07.426 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-07-31 15:05:07.426 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-07-31 15:05:07.427 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-07-31 15:05:07.435 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-07-31 15:05:07.813 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-07-31 15:05:07.813 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 5569 ms
+2020-07-31 15:05:08.262 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-31 15:05:08.371 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext
+				-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'layuiController': Unsatisfied dependency expressed through field 'salaryMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.gui.mapper.SalaryMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-07-31 15:05:08.372 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-31 15:05:08.375 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-31 15:05:08.522 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-31 15:05:08.855 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-31 15:05:09.202 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-07-31 15:05:11.196 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-07-31 15:05:11.250 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-07-31 15:05:13.135 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-31 15:05:13.156 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-31 15:05:13.167 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-31 15:05:13.169 [main] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Shutdown initiated...
+2020-07-31 15:05:13.188 [main] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Shutdown completed.
+2020-07-31 15:05:13.194 [main] INFO  o.a.catalina.core.StandardService
+				-Stopping service [Tomcat]
+2020-07-31 15:05:13.230 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener
+				-
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-31 15:05:13.547 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter
+				-
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field salaryMapper in com.gui.controller.LayuiController required a bean of type 'com.gui.mapper.SalaryMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.gui.mapper.SalaryMapper' in your configuration.
+
+2020-07-31 15:05:44.415 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 2656 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-07-31 15:05:44.424 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-07-31 15:05:46.298 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-31 15:05:46.377 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 48ms. Found 0 JPA repository interfaces.
+2020-07-31 15:05:46.991 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-07-31 15:05:47.058 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-07-31 15:05:47.059 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-07-31 15:05:47.060 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-07-31 15:05:47.061 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-07-31 15:05:47.061 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-07-31 15:05:47.062 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-07-31 15:05:47.063 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-07-31 15:05:47.414 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-07-31 15:05:47.960 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-07-31 15:05:47.969 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-07-31 15:05:49.353 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-07-31 15:05:49.379 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-07-31 15:05:49.381 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-07-31 15:05:49.382 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-31 15:05:49.387 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-07-31 15:05:49.387 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-07-31 15:05:49.388 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-07-31 15:05:49.394 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-07-31 15:05:49.784 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-07-31 15:05:49.785 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 5186 ms
+2020-07-31 15:05:50.264 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-31 15:05:50.373 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-31 15:05:50.505 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-31 15:05:50.840 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-31 15:05:51.084 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-07-31 15:05:51.105 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+				-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-31 15:05:52.142 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Starting ProtocolHandler ["http-nio-8088"]
+2020-07-31 15:05:52.205 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat started on port(s): 8088 (http) with context path ''
+2020-07-31 15:05:52.212 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Triggering deferred initialization of Spring Data repositories…
+2020-07-31 15:05:52.213 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Spring Data repositories initialized!
+2020-07-31 15:05:52.238 [main] INFO  com.gui.UserSalaryApplication
+				-Started UserSalaryApplication in 8.783 seconds (JVM running for 10.478)
+2020-07-31 15:05:52.402 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-31 15:05:52.403 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+				-Initializing Servlet 'dispatcherServlet'
+2020-07-31 15:05:52.420 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+				-Completed initialization in 16 ms
+2020-07-31 15:05:52.921 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-07-31 15:05:52.971 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-07-31 15:05:54.866 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-31 15:05:54.890 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-31 15:06:23.016 [http-nio-8088-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver
+				-Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-07-31 15:13:40.088 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 11768 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-07-31 15:13:40.097 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-07-31 15:13:41.779 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-31 15:13:41.840 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 40ms. Found 0 JPA repository interfaces.
+2020-07-31 15:13:42.329 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-07-31 15:13:42.386 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-07-31 15:13:42.387 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-07-31 15:13:42.388 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-07-31 15:13:42.388 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-07-31 15:13:42.389 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-07-31 15:13:42.389 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-07-31 15:13:42.390 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-07-31 15:13:42.604 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-07-31 15:13:43.070 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-07-31 15:13:43.076 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-07-31 15:13:44.450 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-07-31 15:13:44.490 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-07-31 15:13:44.494 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-07-31 15:13:44.496 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-31 15:13:44.503 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-07-31 15:13:44.504 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-07-31 15:13:44.504 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-07-31 15:13:44.515 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-07-31 15:13:44.904 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-07-31 15:13:44.905 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 4671 ms
+2020-07-31 15:13:45.350 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-31 15:13:45.455 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-31 15:13:45.576 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-31 15:13:45.826 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-31 15:13:45.993 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+				-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-31 15:13:46.058 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-07-31 15:13:46.941 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Starting ProtocolHandler ["http-nio-8088"]
+2020-07-31 15:13:46.984 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat started on port(s): 8088 (http) with context path ''
+2020-07-31 15:13:46.989 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Triggering deferred initialization of Spring Data repositories…
+2020-07-31 15:13:46.990 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Spring Data repositories initialized!
+2020-07-31 15:13:47.006 [main] INFO  com.gui.UserSalaryApplication
+				-Started UserSalaryApplication in 7.667 seconds (JVM running for 9.253)
+2020-07-31 15:13:47.750 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-07-31 15:13:47.797 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-07-31 15:13:49.317 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-31 15:13:49.338 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-31 15:19:18.119 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-31 15:19:18.120 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Initializing Servlet 'dispatcherServlet'
+2020-07-31 15:19:18.143 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Completed initialization in 23 ms
+2020-07-31 15:19:18.198 [http-nio-8088-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver
+				-Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-07-31 16:50:36.542 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 15824 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-07-31 16:50:36.551 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-07-31 16:50:38.367 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-31 16:50:38.441 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 47ms. Found 0 JPA repository interfaces.
+2020-07-31 16:50:38.874 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-07-31 16:50:38.930 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-07-31 16:50:38.930 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-07-31 16:50:38.931 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-07-31 16:50:38.932 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-07-31 16:50:38.932 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-07-31 16:50:38.933 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-07-31 16:50:38.934 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-07-31 16:50:39.189 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-07-31 16:50:39.678 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-07-31 16:50:39.685 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-07-31 16:50:40.819 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-07-31 16:50:40.833 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-07-31 16:50:40.834 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-07-31 16:50:40.835 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-31 16:50:40.837 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-07-31 16:50:40.837 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-07-31 16:50:40.837 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-07-31 16:50:40.842 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-07-31 16:50:41.163 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-07-31 16:50:41.164 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 4428 ms
+2020-07-31 16:50:41.710 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-31 16:50:41.895 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-31 16:50:42.057 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-31 16:50:42.666 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-31 16:50:42.836 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext
+				-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'layuiController': Unsatisfied dependency expressed through field 'salaryMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'salaryMapper' defined in file [E:\Company\UserSalary\target\classes\com\gui\mapper\SalaryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\Company\UserSalary\target\classes\mybatis\mapper\QueryTestMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [E:\Company\UserSalary\target\classes\mybatis\mapper\QueryTestMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.upload.entity.Salary'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.upload.entity.Salary
+2020-07-31 16:50:42.837 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-31 16:50:43.089 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-07-31 16:50:44.778 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-07-31 16:50:44.812 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-07-31 16:50:46.043 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-31 16:50:46.063 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-31 16:50:46.070 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-31 16:50:46.071 [main] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Shutdown initiated...
+2020-07-31 16:50:46.087 [main] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Shutdown completed.
+2020-07-31 16:50:46.091 [main] INFO  o.a.catalina.core.StandardService
+				-Stopping service [Tomcat]
+2020-07-31 16:50:46.113 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener
+				-
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-31 16:50:46.121 [main] ERROR o.s.boot.SpringApplication
+				-Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'layuiController': Unsatisfied dependency expressed through field 'salaryMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'salaryMapper' defined in file [E:\Company\UserSalary\target\classes\com\gui\mapper\SalaryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\Company\UserSalary\target\classes\mybatis\mapper\QueryTestMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [E:\Company\UserSalary\target\classes\mybatis\mapper\QueryTestMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.upload.entity.Salary'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.upload.entity.Salary
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.gui.UserSalaryApplication.main(UserSalaryApplication.java:13)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'salaryMapper' defined in file [E:\Company\UserSalary\target\classes\com\gui\mapper\SalaryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\Company\UserSalary\target\classes\mybatis\mapper\QueryTestMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [E:\Company\UserSalary\target\classes\mybatis\mapper\QueryTestMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.upload.entity.Salary'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.upload.entity.Salary
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1526)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\Company\UserSalary\target\classes\mybatis\mapper\QueryTestMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [E:\Company\UserSalary\target\classes\mybatis\mapper\QueryTestMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.upload.entity.Salary'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.upload.entity.Salary
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1511)
+	... 31 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\Company\UserSalary\target\classes\mybatis\mapper\QueryTestMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [E:\Company\UserSalary\target\classes\mybatis\mapper\QueryTestMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.upload.entity.Salary'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.upload.entity.Salary
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 44 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\Company\UserSalary\target\classes\mybatis\mapper\QueryTestMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [E:\Company\UserSalary\target\classes\mybatis\mapper\QueryTestMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.upload.entity.Salary'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.upload.entity.Salary
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:612)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:490)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:632)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:180)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$68249357.CGLIB$sqlSessionFactory$1(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$68249357$$FastClassBySpringCGLIB$$a31167ee.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$68249357.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 45 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [E:\Company\UserSalary\target\classes\mybatis\mapper\QueryTestMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.upload.entity.Salary'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.upload.entity.Salary
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:610)
+	... 58 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.upload.entity.Salary'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.upload.entity.Salary
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:76)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:138)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:131)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:121)
+	... 60 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.upload.entity.Salary'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.upload.entity.Salary
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 64 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.upload.entity.Salary
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 66 common frames omitted
+2020-07-31 16:53:09.161 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 15736 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-07-31 16:53:09.166 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-07-31 16:53:10.642 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-31 16:53:10.688 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 25ms. Found 0 JPA repository interfaces.
+2020-07-31 16:53:11.175 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-07-31 16:53:11.204 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-07-31 16:53:11.205 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-07-31 16:53:11.205 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-07-31 16:53:11.205 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-07-31 16:53:11.206 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-07-31 16:53:11.206 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-07-31 16:53:11.206 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-07-31 16:53:11.461 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-07-31 16:53:11.947 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-07-31 16:53:11.952 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-07-31 16:53:13.096 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-07-31 16:53:13.114 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-07-31 16:53:13.115 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-07-31 16:53:13.115 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-31 16:53:13.118 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-07-31 16:53:13.118 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-07-31 16:53:13.118 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-07-31 16:53:13.124 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-07-31 16:53:13.428 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-07-31 16:53:13.429 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 4145 ms
+2020-07-31 16:53:13.841 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-31 16:53:13.942 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-31 16:53:14.065 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-31 16:53:14.343 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-31 16:53:14.514 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+				-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-31 16:53:14.576 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-07-31 16:53:15.316 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Starting ProtocolHandler ["http-nio-8088"]
+2020-07-31 16:53:15.361 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat started on port(s): 8088 (http) with context path ''
+2020-07-31 16:53:15.367 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Triggering deferred initialization of Spring Data repositories…
+2020-07-31 16:53:15.368 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Spring Data repositories initialized!
+2020-07-31 16:53:15.385 [main] INFO  com.gui.UserSalaryApplication
+				-Started UserSalaryApplication in 6.889 seconds (JVM running for 8.185)
+2020-07-31 16:53:16.070 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-07-31 16:53:16.118 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-07-31 16:53:17.356 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-31 16:53:17.373 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-31 16:53:23.568 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-31 16:53:23.570 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+				-Initializing Servlet 'dispatcherServlet'
+2020-07-31 16:53:23.589 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+				-Completed initialization in 19 ms

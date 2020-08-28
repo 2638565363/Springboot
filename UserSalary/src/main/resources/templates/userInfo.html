@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+	  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>用户信息表</title>
+  <script th:src="@{/js/layui/layui.js}"></script>
+   <link rel="stylesheet" th:href = "@{/js/layui/css/layui.css}"> 
+</head>
+<body class="layui-layout-body">
+
+
+
+<div class="layui-layout layui-layout-admin">
+<div class="layui-header">
+    <div class="layui-logo">员工信息管理</div>
+    <!-- 头部区域（可配合layui已有的水平导航） -->
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item">
+        <a href="javascript:;">
+          <span sec:authentication="name"></span>
+        </a>
+      </li>
+      <li class="layui-nav-item"><a href="logout">退出</a></li>
+    </ul>
+  </div>
+
+<div class="layui-side layui-bg-black">
+	<div class="layui-side-scroll">
+      		<ul class="layui-nav layui-nav-tree"  lay-filter="test">
+      				<li class="layui-nav-item"><a href="index.html">首页</a></li>
+      				<li class="layui-nav-item layui-nav-itemed">
+      					<a href="javascript:;">通知公告</a>
+						<dl class="layui-nav-child">
+      						<dd><a href="announcement.html">全部公告</a></dd>
+      						<dd><a href="myAnnouncement.html">我发布的</a></dd>
+   					 	</dl>
+   					 </li>
+				<div sec:authorize="hasRole('ADMIN')">
+  					<li class="layui-nav-item"><a href="UserSalary.html">员工信息表</a></li>
+  				</div>
+  				<div sec:authorize="hasRole('ADMIN')">
+  					<li class="layui-nav-item"><a href="userInfo.html">用户信息表</a></li>
+  				</div>
+      		</ul>
+	</div>
+</div>
+<div class="layui-body">
+
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+          <legend>用户信息表</legend>
+    </fieldset>
+
+<script type="text/html" id="toolbarDemo">
+  <div class="layui-btn-container">
+     <a href="sysUserInsert.html"><button type="button" class="layui-btn layui-btn-sm">添加用户</button></a>
+  </div>
+</script>
+	<div class="layui-tab-item layui-show">
+    		<table class="layui-hide" id="test" lay-filter="tab"></table>
+	</div>
+	
+	<script type="text/html" id="barDemo">
+	<a href="sysUserUpdate.html"><button type="button"  id="update" class="layui-btn layui-btn-xs" >编辑</button></a>
+	<a name="delete" class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+</div>
+
+</body>
+<script>
+    //注意：导航 依赖 element 模块，否则无法进行功能性操作
+    layui.use(['element', 'table', 'laypage', 'layer', 'jquery'], function(){
+        var element = layui.element;
+        var table = layui.table;
+        var layer = layui.layer;
+        var laypage = layui.page;
+        var $ = layui.jquery;
+        var tableIns
+        tableIns = table.render({
+        	elem: '#test'
+        	,url:'/sysUserLayui' //数据接口
+        	        ,title: '用户数据表'
+        	        ,toolbar: '#toolbarDemo' //开启头部工具栏，并为其绑定左侧模板
+        	        ,page:{
+        	        	limit: 5   //默认十条数据一页
+        	        	,limits: [5, 10, 20, 50, 100,15000]  //数据分页条
+        	        }
+        	        ,icon: 'layui-icon-tips'
+        	        ,cols: [//表头
+        	            [
+        	           {id: 'username', field:'username', title:'账号', width:180, edit: 'text'}
+           	          ,{id: 'uname', field:'uname', title:'姓名', width:180, edit: 'text'}
+        	          ,{id: 'sex',field:'sex', title:'性别', width:180, edit: 'text', templet: function(d){if(d.sex == "1"){return '男'}else{return '女'}}}
+        	          ,{id: 'birth', field:'birth', title:'生日', width:240}
+        	          ,{id: 'home', field:'home', title:'住址', width:250}
+        	          ,{title:'操作', toolbar: '#barDemo', width:180}
+        	        ]
+        	        ]
+        	      });
+        
+        
+        table.on('tool(tab)', function(obj){ //注：tool 是工具条事件名，test 是 table 原始容器的属性 lay-filter="对应的值"
+	    var data = obj.data; //获得当前行数据
+	    var layEvent = obj.event; //获得 lay-event 对应的值（也可以是表头的 event 参数对应的值）
+	    if(layEvent === 'del'){ //删除
+	      layer.confirm('真的删除行么', function(index){   
+	    $.ajax({
+   	    type:"post",
+   	    url: "/sysUserDelete/"+data.username,
+   	    dataType: "json",
+           data:JSON.stringify(obj),
+           contentType : "application/json",
+           async:false,
+           success: function (data) {
+        	   obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
+  	           layer.close(index);
+  	         //向服务端发送删除指令
+               console.log(data.username)
+           },
+           error: function (e) {
+               console.log(e)
+           }
+	})
+});
+}
+});
+        })
+       
+</script>
+
+</html>

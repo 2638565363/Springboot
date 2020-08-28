@@ -1,0 +1,1826 @@
+2020-08-10 11:48:16.524 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 3404 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-08-10 11:48:16.534 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-08-10 11:48:17.847 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-10 11:48:17.901 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 34ms. Found 0 JPA repository interfaces.
+2020-08-10 11:48:18.336 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-08-10 11:48:18.378 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-08-10 11:48:18.379 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 11:48:18.379 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 11:48:18.380 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 11:48:18.380 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-08-10 11:48:18.381 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 11:48:18.381 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 11:48:18.596 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-08-10 11:48:19.044 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-08-10 11:48:19.050 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-08-10 11:48:19.835 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-08-10 11:48:19.852 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-08-10 11:48:19.854 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-08-10 11:48:19.854 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-10 11:48:19.857 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-08-10 11:48:19.858 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-08-10 11:48:19.858 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-08-10 11:48:19.864 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-08-10 11:48:20.081 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-08-10 11:48:20.081 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 3440 ms
+2020-08-10 11:48:20.414 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-10 11:48:20.492 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-10 11:48:20.609 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-10 11:48:20.919 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-10 11:48:21.093 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+				-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-10 11:48:21.171 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-08-10 11:48:21.938 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Starting ProtocolHandler ["http-nio-8088"]
+2020-08-10 11:48:21.984 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat started on port(s): 8088 (http) with context path ''
+2020-08-10 11:48:21.990 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Triggering deferred initialization of Spring Data repositories…
+2020-08-10 11:48:21.991 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Spring Data repositories initialized!
+2020-08-10 11:48:22.007 [main] INFO  com.gui.UserSalaryApplication
+				-Started UserSalaryApplication in 6.031 seconds (JVM running for 6.931)
+2020-08-10 11:48:22.485 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-08-10 11:48:22.516 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-10 11:48:23.745 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-10 11:48:23.756 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 11:48:39.922 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-10 11:48:39.923 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Initializing Servlet 'dispatcherServlet'
+2020-08-10 11:48:39.935 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Completed initialization in 12 ms
+2020-08-10 11:50:57.959 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 4040 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-08-10 11:50:57.965 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-08-10 11:50:59.027 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-10 11:50:59.073 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 30ms. Found 0 JPA repository interfaces.
+2020-08-10 11:50:59.409 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-08-10 11:50:59.443 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-08-10 11:50:59.444 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 11:50:59.445 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 11:50:59.445 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 11:50:59.446 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-08-10 11:50:59.446 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 11:50:59.446 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 11:50:59.667 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-08-10 11:51:00.083 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-08-10 11:51:00.088 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-08-10 11:51:00.811 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-08-10 11:51:00.823 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-08-10 11:51:00.823 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-08-10 11:51:00.824 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-10 11:51:00.826 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-08-10 11:51:00.826 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-08-10 11:51:00.826 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-08-10 11:51:00.830 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-08-10 11:51:01.046 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-08-10 11:51:01.047 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 2995 ms
+2020-08-10 11:51:01.390 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-10 11:51:01.461 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-10 11:51:01.541 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-10 11:51:01.780 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-10 11:51:01.979 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+				-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-10 11:51:01.984 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-08-10 11:51:02.784 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Starting ProtocolHandler ["http-nio-8088"]
+2020-08-10 11:51:02.833 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat started on port(s): 8088 (http) with context path ''
+2020-08-10 11:51:02.839 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Triggering deferred initialization of Spring Data repositories…
+2020-08-10 11:51:02.840 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Spring Data repositories initialized!
+2020-08-10 11:51:02.859 [main] INFO  com.gui.UserSalaryApplication
+				-Started UserSalaryApplication in 5.38 seconds (JVM running for 6.185)
+2020-08-10 11:51:03.244 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-08-10 11:51:03.279 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-10 11:51:04.305 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-10 11:51:04.313 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 11:51:07.341 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-10 11:51:07.342 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Initializing Servlet 'dispatcherServlet'
+2020-08-10 11:51:07.351 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Completed initialization in 9 ms
+2020-08-10 12:28:43.623 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 11852 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-08-10 12:28:43.629 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-08-10 12:28:44.752 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-10 12:28:44.797 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 28ms. Found 0 JPA repository interfaces.
+2020-08-10 12:28:45.117 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-08-10 12:28:45.149 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-08-10 12:28:45.150 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 12:28:45.151 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 12:28:45.152 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 12:28:45.153 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-08-10 12:28:45.153 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 12:28:45.154 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 12:28:45.340 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-08-10 12:28:45.712 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-08-10 12:28:45.717 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-08-10 12:28:46.435 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-08-10 12:28:46.448 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-08-10 12:28:46.448 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-08-10 12:28:46.449 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-10 12:28:46.451 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-08-10 12:28:46.451 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-08-10 12:28:46.451 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-08-10 12:28:46.457 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-08-10 12:28:46.688 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-08-10 12:28:46.688 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 2967 ms
+2020-08-10 12:28:47.016 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-10 12:28:47.085 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-10 12:28:47.176 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-10 12:28:47.406 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-10 12:28:47.594 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+				-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-10 12:28:47.624 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-08-10 12:28:48.504 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Starting ProtocolHandler ["http-nio-8088"]
+2020-08-10 12:28:48.561 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat started on port(s): 8088 (http) with context path ''
+2020-08-10 12:28:48.569 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Triggering deferred initialization of Spring Data repositories…
+2020-08-10 12:28:48.570 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Spring Data repositories initialized!
+2020-08-10 12:28:48.592 [main] INFO  com.gui.UserSalaryApplication
+				-Started UserSalaryApplication in 5.462 seconds (JVM running for 6.251)
+2020-08-10 12:28:49.050 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-08-10 12:28:49.079 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-10 12:28:50.248 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-10 12:28:50.258 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 12:28:52.895 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-10 12:28:52.895 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Initializing Servlet 'dispatcherServlet'
+2020-08-10 12:28:52.905 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Completed initialization in 10 ms
+2020-08-10 12:34:05.712 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 13580 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-08-10 12:34:05.718 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-08-10 12:34:06.794 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-10 12:34:06.841 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 28ms. Found 0 JPA repository interfaces.
+2020-08-10 12:34:07.168 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-08-10 12:34:07.193 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-08-10 12:34:07.194 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 12:34:07.194 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 12:34:07.195 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 12:34:07.195 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-08-10 12:34:07.195 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 12:34:07.195 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 12:34:07.349 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-08-10 12:34:07.737 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-08-10 12:34:07.743 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-08-10 12:34:08.444 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-08-10 12:34:08.456 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-08-10 12:34:08.457 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-08-10 12:34:08.458 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-10 12:34:08.460 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-08-10 12:34:08.460 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-08-10 12:34:08.460 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-08-10 12:34:08.466 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-08-10 12:34:08.672 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-08-10 12:34:08.673 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 2861 ms
+2020-08-10 12:34:09.003 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-10 12:34:09.072 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-10 12:34:09.165 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-10 12:34:09.402 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-10 12:34:09.613 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+				-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-10 12:34:09.622 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-08-10 12:34:10.393 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Starting ProtocolHandler ["http-nio-8088"]
+2020-08-10 12:34:10.434 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat started on port(s): 8088 (http) with context path ''
+2020-08-10 12:34:10.438 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Triggering deferred initialization of Spring Data repositories…
+2020-08-10 12:34:10.439 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Spring Data repositories initialized!
+2020-08-10 12:34:10.455 [main] INFO  com.gui.UserSalaryApplication
+				-Started UserSalaryApplication in 5.209 seconds (JVM running for 6.02)
+2020-08-10 12:34:10.833 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-08-10 12:34:10.863 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-10 12:34:11.909 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-10 12:34:11.917 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 12:34:20.239 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-10 12:34:20.240 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Initializing Servlet 'dispatcherServlet'
+2020-08-10 12:34:20.250 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Completed initialization in 10 ms
+2020-08-10 12:42:14.885 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 7460 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-08-10 12:42:14.891 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-08-10 12:42:16.409 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-10 12:42:16.469 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 38ms. Found 0 JPA repository interfaces.
+2020-08-10 12:42:17.024 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-08-10 12:42:17.085 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-08-10 12:42:17.086 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 12:42:17.087 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 12:42:17.088 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 12:42:17.088 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-08-10 12:42:17.089 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 12:42:17.089 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 12:42:17.338 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-08-10 12:42:17.758 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-08-10 12:42:17.765 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-08-10 12:42:18.916 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-08-10 12:42:18.941 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-08-10 12:42:18.943 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-08-10 12:42:18.944 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-10 12:42:18.947 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-08-10 12:42:18.948 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-08-10 12:42:18.949 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-08-10 12:42:18.956 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-08-10 12:42:19.257 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-08-10 12:42:19.257 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 4258 ms
+2020-08-10 12:42:19.739 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-10 12:42:19.824 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-10 12:42:19.941 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-10 12:42:20.234 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-10 12:42:20.416 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+				-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-10 12:42:20.442 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-08-10 12:42:21.396 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Starting ProtocolHandler ["http-nio-8088"]
+2020-08-10 12:42:21.444 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat started on port(s): 8088 (http) with context path ''
+2020-08-10 12:42:21.449 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Triggering deferred initialization of Spring Data repositories…
+2020-08-10 12:42:21.450 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Spring Data repositories initialized!
+2020-08-10 12:42:21.467 [main] INFO  com.gui.UserSalaryApplication
+				-Started UserSalaryApplication in 7.296 seconds (JVM running for 8.599)
+2020-08-10 12:42:21.972 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-08-10 12:42:22.011 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-10 12:42:23.470 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-10 12:42:23.488 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 12:42:42.786 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-10 12:42:42.786 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Initializing Servlet 'dispatcherServlet'
+2020-08-10 12:42:42.803 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Completed initialization in 16 ms
+2020-08-10 14:23:03.326 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 9500 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-08-10 14:23:03.332 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-08-10 14:23:16.050 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 552 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-08-10 14:23:16.057 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-08-10 14:23:17.533 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-10 14:23:17.604 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 50ms. Found 0 JPA repository interfaces.
+2020-08-10 14:23:18.071 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-08-10 14:23:18.132 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-08-10 14:23:18.133 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 14:23:18.133 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 14:23:18.134 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 14:23:18.135 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-08-10 14:23:18.136 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 14:23:18.136 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 14:23:18.364 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-08-10 14:23:18.820 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-08-10 14:23:18.826 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-08-10 14:23:19.792 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-08-10 14:23:19.808 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-08-10 14:23:19.809 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-08-10 14:23:19.810 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-10 14:23:19.812 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-08-10 14:23:19.812 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-08-10 14:23:19.812 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-08-10 14:23:19.817 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-08-10 14:23:20.155 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-08-10 14:23:20.155 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 3958 ms
+2020-08-10 14:23:20.636 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-10 14:23:20.782 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-10 14:23:20.932 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-10 14:23:21.272 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-10 14:23:21.490 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+				-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-10 14:23:21.498 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-08-10 14:23:22.474 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Starting ProtocolHandler ["http-nio-8088"]
+2020-08-10 14:23:22.549 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat started on port(s): 8088 (http) with context path ''
+2020-08-10 14:23:22.555 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Triggering deferred initialization of Spring Data repositories…
+2020-08-10 14:23:22.555 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Spring Data repositories initialized!
+2020-08-10 14:23:22.585 [main] INFO  com.gui.UserSalaryApplication
+				-Started UserSalaryApplication in 7.326 seconds (JVM running for 8.704)
+2020-08-10 14:23:23.133 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-08-10 14:23:23.172 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-10 14:23:24.748 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-10 14:23:24.764 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 14:24:08.021 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-10 14:24:08.021 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+				-Initializing Servlet 'dispatcherServlet'
+2020-08-10 14:24:08.038 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+				-Completed initialization in 16 ms
+2020-08-10 14:32:24.907 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 8852 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-08-10 14:32:24.918 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-08-10 14:32:26.425 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-10 14:32:26.485 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 44ms. Found 0 JPA repository interfaces.
+2020-08-10 14:32:27.019 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-08-10 14:32:27.088 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-08-10 14:32:27.089 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 14:32:27.090 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 14:32:27.090 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 14:32:27.091 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-08-10 14:32:27.091 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 14:32:27.092 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 14:32:27.323 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-08-10 14:32:27.859 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-08-10 14:32:27.868 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-08-10 14:32:29.025 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-08-10 14:32:29.049 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-08-10 14:32:29.050 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-08-10 14:32:29.051 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-10 14:32:29.054 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-08-10 14:32:29.055 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-08-10 14:32:29.055 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-08-10 14:32:29.062 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-08-10 14:32:29.379 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-08-10 14:32:29.380 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 4360 ms
+2020-08-10 14:32:29.752 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-10 14:32:29.831 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-10 14:32:29.933 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-10 14:32:30.216 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-10 14:32:30.459 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+				-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-10 14:32:30.465 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-08-10 14:32:31.360 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Starting ProtocolHandler ["http-nio-8088"]
+2020-08-10 14:32:31.403 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat started on port(s): 8088 (http) with context path ''
+2020-08-10 14:32:31.408 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Triggering deferred initialization of Spring Data repositories…
+2020-08-10 14:32:31.410 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Spring Data repositories initialized!
+2020-08-10 14:32:31.430 [main] INFO  com.gui.UserSalaryApplication
+				-Started UserSalaryApplication in 7.315 seconds (JVM running for 8.698)
+2020-08-10 14:32:31.931 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-08-10 14:32:31.974 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-10 14:32:33.621 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-10 14:32:33.642 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 14:32:37.704 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-10 14:32:37.705 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Initializing Servlet 'dispatcherServlet'
+2020-08-10 14:32:37.721 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Completed initialization in 16 ms
+2020-08-10 14:39:55.239 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 11060 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-08-10 14:39:55.245 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-08-10 14:39:56.872 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-10 14:39:56.942 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 46ms. Found 0 JPA repository interfaces.
+2020-08-10 14:39:57.465 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-08-10 14:39:57.518 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-08-10 14:39:57.519 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 14:39:57.520 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 14:39:57.521 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 14:39:57.521 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-08-10 14:39:57.522 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 14:39:57.522 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 14:39:57.775 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-08-10 14:39:58.199 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-08-10 14:39:58.206 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-08-10 14:39:59.360 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-08-10 14:39:59.386 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-08-10 14:39:59.388 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-08-10 14:39:59.389 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-10 14:39:59.392 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-08-10 14:39:59.393 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-08-10 14:39:59.393 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-08-10 14:39:59.401 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-08-10 14:39:59.738 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-08-10 14:39:59.739 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 4394 ms
+2020-08-10 14:40:00.121 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-10 14:40:00.216 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-10 14:40:00.346 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-10 14:40:00.617 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-10 14:40:00.789 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+				-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-10 14:40:00.839 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-08-10 14:40:01.640 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Starting ProtocolHandler ["http-nio-8088"]
+2020-08-10 14:40:01.706 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat started on port(s): 8088 (http) with context path ''
+2020-08-10 14:40:01.712 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Triggering deferred initialization of Spring Data repositories…
+2020-08-10 14:40:01.713 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Spring Data repositories initialized!
+2020-08-10 14:40:01.732 [main] INFO  com.gui.UserSalaryApplication
+				-Started UserSalaryApplication in 7.278 seconds (JVM running for 8.601)
+2020-08-10 14:40:02.376 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-08-10 14:40:02.406 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-10 14:40:03.940 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-10 14:40:03.957 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 14:40:04.941 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-10 14:40:04.941 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Initializing Servlet 'dispatcherServlet'
+2020-08-10 14:40:04.960 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Completed initialization in 18 ms
+2020-08-10 14:40:11.931 [http-nio-8088-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]
+				-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.Error: Unresolved compilation problems: 
+	layuiVO cannot be resolved
+	salaryList cannot be resolved
+] with root cause
+java.lang.Error: Unresolved compilation problems: 
+	layuiVO cannot be resolved
+	salaryList cannot be resolved
+
+	at com.gui.controller.LayuiController.layui(LayuiController.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-10 14:41:06.767 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 10952 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-08-10 14:41:06.776 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-08-10 14:41:08.577 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-10 14:41:08.639 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 40ms. Found 0 JPA repository interfaces.
+2020-08-10 14:41:09.180 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-08-10 14:41:09.257 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-08-10 14:41:09.258 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 14:41:09.260 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 14:41:09.262 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 14:41:09.263 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-08-10 14:41:09.264 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 14:41:09.265 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 14:41:09.535 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-08-10 14:41:10.025 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-08-10 14:41:10.030 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-08-10 14:41:11.225 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-08-10 14:41:11.248 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-08-10 14:41:11.250 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-08-10 14:41:11.250 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-10 14:41:11.253 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-08-10 14:41:11.254 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-08-10 14:41:11.254 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-08-10 14:41:11.261 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-08-10 14:41:11.600 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-08-10 14:41:11.601 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 4659 ms
+2020-08-10 14:41:12.012 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-10 14:41:12.097 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-10 14:41:12.231 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-10 14:41:12.493 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-10 14:41:12.709 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-08-10 14:41:12.722 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+				-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-10 14:41:13.594 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Starting ProtocolHandler ["http-nio-8088"]
+2020-08-10 14:41:13.643 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat started on port(s): 8088 (http) with context path ''
+2020-08-10 14:41:13.649 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Triggering deferred initialization of Spring Data repositories…
+2020-08-10 14:41:13.650 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Spring Data repositories initialized!
+2020-08-10 14:41:13.678 [main] INFO  com.gui.UserSalaryApplication
+				-Started UserSalaryApplication in 7.871 seconds (JVM running for 9.189)
+2020-08-10 14:41:14.256 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-08-10 14:41:14.293 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-10 14:41:16.094 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-10 14:41:16.108 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 14:41:19.729 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-10 14:41:19.729 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Initializing Servlet 'dispatcherServlet'
+2020-08-10 14:41:19.742 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Completed initialization in 12 ms
+2020-08-10 14:54:14.737 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 9324 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-08-10 14:54:14.746 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-08-10 14:54:16.315 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-10 14:54:16.363 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 30ms. Found 0 JPA repository interfaces.
+2020-08-10 14:54:16.768 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-08-10 14:54:16.819 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-08-10 14:54:16.820 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 14:54:16.821 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 14:54:16.822 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 14:54:16.823 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-08-10 14:54:16.824 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 14:54:16.825 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 14:54:17.069 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-08-10 14:54:17.551 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-08-10 14:54:17.557 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-08-10 14:54:18.709 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-08-10 14:54:18.732 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-08-10 14:54:18.733 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-08-10 14:54:18.734 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-10 14:54:18.737 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-08-10 14:54:18.738 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-08-10 14:54:18.738 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-08-10 14:54:18.745 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-08-10 14:54:19.087 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-08-10 14:54:19.087 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 4183 ms
+2020-08-10 14:54:19.541 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-10 14:54:19.640 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-10 14:54:19.797 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-10 14:54:20.129 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-10 14:54:20.334 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+				-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-10 14:54:20.353 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-08-10 14:54:21.219 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Starting ProtocolHandler ["http-nio-8088"]
+2020-08-10 14:54:21.270 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat started on port(s): 8088 (http) with context path ''
+2020-08-10 14:54:21.280 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Triggering deferred initialization of Spring Data repositories…
+2020-08-10 14:54:21.283 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Spring Data repositories initialized!
+2020-08-10 14:54:21.306 [main] INFO  com.gui.UserSalaryApplication
+				-Started UserSalaryApplication in 7.5 seconds (JVM running for 8.85)
+2020-08-10 14:54:21.429 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-10 14:54:21.430 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+				-Initializing Servlet 'dispatcherServlet'
+2020-08-10 14:54:21.445 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+				-Completed initialization in 15 ms
+2020-08-10 14:54:21.949 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-08-10 14:54:21.984 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-10 14:54:23.762 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-10 14:54:23.779 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 15:12:14.710 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 9492 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-08-10 15:12:14.722 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-08-10 15:12:16.250 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-10 15:12:16.312 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 39ms. Found 0 JPA repository interfaces.
+2020-08-10 15:12:16.843 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-08-10 15:12:16.904 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-08-10 15:12:16.905 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 15:12:16.906 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 15:12:16.907 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 15:12:16.908 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-08-10 15:12:16.909 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 15:12:16.910 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 15:12:17.153 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-08-10 15:12:17.682 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-08-10 15:12:17.687 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-08-10 15:12:18.799 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-08-10 15:12:18.832 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-08-10 15:12:18.833 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-08-10 15:12:18.834 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-10 15:12:18.838 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-08-10 15:12:18.839 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-08-10 15:12:18.839 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-08-10 15:12:18.847 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-08-10 15:12:19.189 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-08-10 15:12:19.190 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 4342 ms
+2020-08-10 15:12:19.597 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-10 15:12:19.668 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-10 15:12:19.773 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-10 15:12:20.055 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-10 15:12:20.265 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-08-10 15:12:20.268 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+				-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-10 15:12:21.091 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Starting ProtocolHandler ["http-nio-8088"]
+2020-08-10 15:12:21.162 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat started on port(s): 8088 (http) with context path ''
+2020-08-10 15:12:21.167 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Triggering deferred initialization of Spring Data repositories…
+2020-08-10 15:12:21.167 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Spring Data repositories initialized!
+2020-08-10 15:12:21.189 [main] INFO  com.gui.UserSalaryApplication
+				-Started UserSalaryApplication in 7.334 seconds (JVM running for 8.691)
+2020-08-10 15:12:21.780 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-08-10 15:12:21.820 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-10 15:12:23.364 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-10 15:12:23.380 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 15:12:29.486 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-10 15:12:29.487 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Initializing Servlet 'dispatcherServlet'
+2020-08-10 15:12:29.505 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Completed initialization in 18 ms
+2020-08-10 15:22:18.825 [http-nio-8088-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]
+				-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.gui.controller.LoginController.postLoginController(LoginController.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-10 15:22:18.835 [http-nio-8088-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver
+				-Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-08-10 15:22:23.396 [http-nio-8088-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]
+				-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.gui.controller.LoginController.postLoginController(LoginController.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-10 15:22:23.400 [http-nio-8088-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver
+				-Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-08-10 15:44:53.893 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 11564 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-08-10 15:44:53.900 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-08-10 15:44:55.570 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-10 15:44:55.636 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 38ms. Found 0 JPA repository interfaces.
+2020-08-10 15:44:56.235 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-08-10 15:44:56.283 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-08-10 15:44:56.284 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 15:44:56.285 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 15:44:56.286 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 15:44:56.287 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-08-10 15:44:56.287 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 15:44:56.288 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 15:44:56.736 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-08-10 15:44:58.097 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-08-10 15:44:58.107 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-08-10 15:44:59.597 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-08-10 15:44:59.622 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-08-10 15:44:59.623 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-08-10 15:44:59.624 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-10 15:44:59.628 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-08-10 15:44:59.629 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-08-10 15:44:59.629 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-08-10 15:44:59.638 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-08-10 15:44:59.951 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-08-10 15:44:59.951 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 5908 ms
+2020-08-10 15:45:00.358 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-10 15:45:00.461 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-10 15:45:00.648 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-10 15:45:00.973 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-10 15:45:01.127 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+				-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-10 15:45:01.205 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-08-10 15:45:02.001 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Starting ProtocolHandler ["http-nio-8088"]
+2020-08-10 15:45:02.060 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat started on port(s): 8088 (http) with context path ''
+2020-08-10 15:45:02.068 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Triggering deferred initialization of Spring Data repositories…
+2020-08-10 15:45:02.069 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Spring Data repositories initialized!
+2020-08-10 15:45:02.088 [main] INFO  com.gui.UserSalaryApplication
+				-Started UserSalaryApplication in 9.193 seconds (JVM running for 10.893)
+2020-08-10 15:45:02.333 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-10 15:45:02.334 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+				-Initializing Servlet 'dispatcherServlet'
+2020-08-10 15:45:02.350 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+				-Completed initialization in 16 ms
+2020-08-10 15:45:02.901 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-08-10 15:45:02.954 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-10 15:45:04.794 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-10 15:45:04.818 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 16:43:35.574 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 4928 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-08-10 16:43:35.582 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-08-10 16:43:37.432 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-10 16:43:37.495 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 41ms. Found 0 JPA repository interfaces.
+2020-08-10 16:43:38.094 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-08-10 16:43:38.145 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-08-10 16:43:38.146 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 16:43:38.147 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 16:43:38.148 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 16:43:38.149 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-08-10 16:43:38.150 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 16:43:38.151 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 16:43:38.435 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-08-10 16:43:38.935 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-08-10 16:43:38.949 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-08-10 16:43:40.010 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-08-10 16:43:40.021 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-08-10 16:43:40.022 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-08-10 16:43:40.022 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-10 16:43:40.024 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-08-10 16:43:40.024 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-08-10 16:43:40.025 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-08-10 16:43:40.028 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-08-10 16:43:40.358 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-08-10 16:43:40.358 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 4630 ms
+2020-08-10 16:43:40.751 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-10 16:43:40.875 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-10 16:43:41.026 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-10 16:43:41.310 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-10 16:43:41.529 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+				-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-10 16:43:41.531 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-08-10 16:43:42.443 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Starting ProtocolHandler ["http-nio-8088"]
+2020-08-10 16:43:42.491 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat started on port(s): 8088 (http) with context path ''
+2020-08-10 16:43:42.502 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Triggering deferred initialization of Spring Data repositories…
+2020-08-10 16:43:42.503 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Spring Data repositories initialized!
+2020-08-10 16:43:42.525 [main] INFO  com.gui.UserSalaryApplication
+				-Started UserSalaryApplication in 7.806 seconds (JVM running for 9.166)
+2020-08-10 16:43:43.053 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-08-10 16:43:43.090 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-10 16:43:45.544 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-10 16:43:45.558 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 16:43:50.916 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-10 16:43:50.917 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Initializing Servlet 'dispatcherServlet'
+2020-08-10 16:43:50.939 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Completed initialization in 22 ms
+2020-08-10 16:45:57.769 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 13304 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-08-10 16:45:57.776 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-08-10 16:45:59.601 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-10 16:45:59.680 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 48ms. Found 0 JPA repository interfaces.
+2020-08-10 16:46:00.333 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-08-10 16:46:00.392 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-08-10 16:46:00.393 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 16:46:00.393 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 16:46:00.394 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 16:46:00.394 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-08-10 16:46:00.395 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 16:46:00.395 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 16:46:00.690 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-08-10 16:46:01.220 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-08-10 16:46:01.229 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-08-10 16:46:02.605 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-08-10 16:46:02.631 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-08-10 16:46:02.632 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-08-10 16:46:02.633 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-10 16:46:02.637 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-08-10 16:46:02.638 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-08-10 16:46:02.639 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-08-10 16:46:02.647 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-08-10 16:46:03.050 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-08-10 16:46:03.050 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 5151 ms
+2020-08-10 16:46:03.475 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-10 16:46:03.565 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-10 16:46:03.707 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-10 16:46:04.025 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-10 16:46:04.283 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+				-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-10 16:46:04.302 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-08-10 16:46:05.203 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Starting ProtocolHandler ["http-nio-8088"]
+2020-08-10 16:46:05.252 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat started on port(s): 8088 (http) with context path ''
+2020-08-10 16:46:05.258 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Triggering deferred initialization of Spring Data repositories…
+2020-08-10 16:46:05.259 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Spring Data repositories initialized!
+2020-08-10 16:46:05.280 [main] INFO  com.gui.UserSalaryApplication
+				-Started UserSalaryApplication in 8.404 seconds (JVM running for 9.811)
+2020-08-10 16:46:05.466 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-10 16:46:05.467 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Initializing Servlet 'dispatcherServlet'
+2020-08-10 16:46:05.486 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Completed initialization in 18 ms
+2020-08-10 16:46:05.968 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-08-10 16:46:06.004 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-10 16:46:07.777 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-10 16:46:07.797 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 16:54:56.586 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 9748 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-08-10 16:54:56.595 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-08-10 16:54:58.167 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-10 16:54:58.204 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 22ms. Found 0 JPA repository interfaces.
+2020-08-10 16:54:58.725 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-08-10 16:54:58.777 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-08-10 16:54:58.778 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 16:54:58.779 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 16:54:58.781 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 16:54:58.782 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-08-10 16:54:58.783 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 16:54:58.783 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 16:54:59.086 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-08-10 16:55:00.213 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-08-10 16:55:00.231 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-08-10 16:55:01.696 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-08-10 16:55:01.719 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-08-10 16:55:01.720 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-08-10 16:55:01.721 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-10 16:55:01.724 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-08-10 16:55:01.725 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-08-10 16:55:01.725 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-08-10 16:55:01.732 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-08-10 16:55:02.046 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-08-10 16:55:02.047 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 5332 ms
+2020-08-10 16:55:02.489 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-10 16:55:02.575 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-10 16:55:02.708 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-10 16:55:03.000 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-10 16:55:03.273 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+				-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-10 16:55:03.304 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-08-10 16:55:04.258 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Starting ProtocolHandler ["http-nio-8088"]
+2020-08-10 16:55:04.310 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat started on port(s): 8088 (http) with context path ''
+2020-08-10 16:55:04.315 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Triggering deferred initialization of Spring Data repositories…
+2020-08-10 16:55:04.316 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Spring Data repositories initialized!
+2020-08-10 16:55:04.334 [main] INFO  com.gui.UserSalaryApplication
+				-Started UserSalaryApplication in 8.574 seconds (JVM running for 9.975)
+2020-08-10 16:55:04.566 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-10 16:55:04.566 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+				-Initializing Servlet 'dispatcherServlet'
+2020-08-10 16:55:04.582 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+				-Completed initialization in 15 ms
+2020-08-10 16:55:04.974 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-08-10 16:55:05.027 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-10 16:55:06.534 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-10 16:55:06.549 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 17:24:35.008 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 6820 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-08-10 17:24:35.016 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-08-10 17:24:36.554 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-10 17:24:36.620 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 39ms. Found 0 JPA repository interfaces.
+2020-08-10 17:24:37.193 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-08-10 17:24:37.229 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-08-10 17:24:37.230 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 17:24:37.231 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 17:24:37.232 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 17:24:37.233 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-08-10 17:24:37.233 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 17:24:37.234 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 17:24:37.471 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-08-10 17:24:38.013 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-08-10 17:24:38.019 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-08-10 17:24:39.854 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-08-10 17:24:39.888 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-08-10 17:24:39.890 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-08-10 17:24:39.891 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-10 17:24:39.895 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-08-10 17:24:39.896 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-08-10 17:24:39.897 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-08-10 17:24:39.908 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-08-10 17:24:40.241 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-08-10 17:24:40.242 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 5087 ms
+2020-08-10 17:24:40.648 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-10 17:24:40.734 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-10 17:24:40.875 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-10 17:24:41.213 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-10 17:24:41.430 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+				-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-10 17:24:41.479 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-08-10 17:24:42.309 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Starting ProtocolHandler ["http-nio-8088"]
+2020-08-10 17:24:42.366 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat started on port(s): 8088 (http) with context path ''
+2020-08-10 17:24:42.375 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Triggering deferred initialization of Spring Data repositories…
+2020-08-10 17:24:42.376 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Spring Data repositories initialized!
+2020-08-10 17:24:42.398 [main] INFO  com.gui.UserSalaryApplication
+				-Started UserSalaryApplication in 8.205 seconds (JVM running for 9.844)
+2020-08-10 17:24:42.558 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-10 17:24:42.559 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Initializing Servlet 'dispatcherServlet'
+2020-08-10 17:24:42.575 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Completed initialization in 16 ms
+2020-08-10 17:24:43.314 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-08-10 17:24:43.363 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-10 17:24:45.106 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-10 17:24:45.125 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 17:28:39.881 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 7488 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-08-10 17:28:39.887 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-08-10 17:28:41.413 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-10 17:28:41.472 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 43ms. Found 0 JPA repository interfaces.
+2020-08-10 17:28:42.039 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-08-10 17:28:42.083 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-08-10 17:28:42.084 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 17:28:42.086 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 17:28:42.088 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 17:28:42.090 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-08-10 17:28:42.091 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 17:28:42.092 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 17:28:42.358 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-08-10 17:28:42.867 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-08-10 17:28:42.874 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-08-10 17:28:44.104 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-08-10 17:28:44.124 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-08-10 17:28:44.125 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-08-10 17:28:44.125 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-10 17:28:44.128 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-08-10 17:28:44.128 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-08-10 17:28:44.129 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-08-10 17:28:44.135 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-08-10 17:28:44.469 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-08-10 17:28:44.470 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 4481 ms
+2020-08-10 17:28:44.889 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-10 17:28:44.986 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-10 17:28:45.096 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-10 17:28:45.343 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-10 17:28:45.550 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-08-10 17:28:45.552 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+				-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-10 17:28:46.334 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Starting ProtocolHandler ["http-nio-8088"]
+2020-08-10 17:28:46.373 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat started on port(s): 8088 (http) with context path ''
+2020-08-10 17:28:46.378 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Triggering deferred initialization of Spring Data repositories…
+2020-08-10 17:28:46.379 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Spring Data repositories initialized!
+2020-08-10 17:28:46.402 [main] INFO  com.gui.UserSalaryApplication
+				-Started UserSalaryApplication in 7.268 seconds (JVM running for 8.54)
+2020-08-10 17:28:47.023 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-08-10 17:28:47.071 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-10 17:28:48.739 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-10 17:28:48.758 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 17:28:49.875 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-10 17:28:49.876 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+				-Initializing Servlet 'dispatcherServlet'
+2020-08-10 17:28:49.899 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+				-Completed initialization in 22 ms
+2020-08-10 17:29:40.591 [http-nio-8088-exec-2] ERROR org.thymeleaf.TemplateEngine
+				-[THYMELEAF][http-nio-8088-exec-2] Exception processing template "uploadFile": Error resolving template [uploadFile], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [uploadFile], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-10 17:29:40.601 [http-nio-8088-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]
+				-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [uploadFile], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [uploadFile], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-10 17:30:35.804 [main] INFO  com.gui.UserSalaryApplication
+				-Starting UserSalaryApplication on LAPTOP-6NB5UEVB with PID 12984 (E:\Company\UserSalary\target\classes started by 武桂毅 in E:\Company\UserSalary)
+2020-08-10 17:30:35.811 [main] INFO  com.gui.UserSalaryApplication
+				-No active profile set, falling back to default profiles: default
+2020-08-10 17:30:37.434 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-10 17:30:37.509 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+				-Finished Spring Data repository scanning in 50ms. Found 0 JPA repository interfaces.
+2020-08-10 17:30:38.061 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor
+				-Post-processing PropertySource instances
+2020-08-10 17:30:38.116 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-08-10 17:30:38.117 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 17:30:38.118 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 17:30:38.119 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 17:30:38.120 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-08-10 17:30:38.121 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-08-10 17:30:38.122 [main] INFO  c.u.j.EncryptablePropertySourceConverter
+				-Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-08-10 17:30:38.437 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter
+				-Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-08-10 17:30:38.819 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver
+				-Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-08-10 17:30:38.824 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector
+				-Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-08-10 17:30:40.026 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat initialized with port(s): 8088 (http)
+2020-08-10 17:30:40.051 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Initializing ProtocolHandler ["http-nio-8088"]
+2020-08-10 17:30:40.053 [main] INFO  o.a.catalina.core.StandardService
+				-Starting service [Tomcat]
+2020-08-10 17:30:40.053 [main] INFO  o.a.catalina.core.StandardEngine
+				-Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-10 17:30:40.057 [main] INFO  o.a.c.core.AprLifecycleListener
+				-Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2020-08-10 17:30:40.058 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-08-10 17:30:40.058 [main] INFO  o.a.c.core.AprLifecycleListener
+				-APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-08-10 17:30:40.066 [main] INFO  o.a.c.core.AprLifecycleListener
+				-OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-08-10 17:30:40.428 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring embedded WebApplicationContext
+2020-08-10 17:30:40.428 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+				-Root WebApplicationContext: initialization completed in 4511 ms
+2020-08-10 17:30:40.813 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+				-Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-10 17:30:40.886 [task-1] INFO  o.h.jpa.internal.util.LogHelper
+				-HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-10 17:30:40.998 [task-1] INFO  org.hibernate.Version
+				-HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-10 17:30:41.261 [task-1] INFO  o.h.annotations.common.Version
+				-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-10 17:30:41.484 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Starting...
+2020-08-10 17:30:41.492 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+				-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-10 17:30:42.334 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+				-Starting ProtocolHandler ["http-nio-8088"]
+2020-08-10 17:30:42.381 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+				-Tomcat started on port(s): 8088 (http) with context path ''
+2020-08-10 17:30:42.386 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Triggering deferred initialization of Spring Data repositories…
+2020-08-10 17:30:42.388 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener
+				-Spring Data repositories initialized!
+2020-08-10 17:30:42.417 [main] INFO  com.gui.UserSalaryApplication
+				-Started UserSalaryApplication in 7.4 seconds (JVM running for 8.719)
+2020-08-10 17:30:42.898 [task-1] INFO  com.zaxxer.hikari.HikariDataSource
+				-HikariPool-1 - Start completed.
+2020-08-10 17:30:42.922 [task-1] INFO  org.hibernate.dialect.Dialect
+				-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-10 17:30:44.445 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+				-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-10 17:30:44.461 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+				-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 17:30:46.629 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+				-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-10 17:30:46.630 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Initializing Servlet 'dispatcherServlet'
+2020-08-10 17:30:46.642 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+				-Completed initialization in 12 ms

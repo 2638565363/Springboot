@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gui.mapper.SysUserRoleMapper">
+  
+  <select id="listByUserId" parameterType="Integer" resultType="com.gui.entity.SysUserRole">
+  	select * from sys_user_role where id = #{id}
+  </select>
+  
+  <insert id="sysUserRoleInsert">
+    insert into sys_user_role (user_id, role_id) values(#{user_id}, #{role_id})
+  </insert>
+
+</mapper>

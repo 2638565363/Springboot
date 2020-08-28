@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>添加员工信息</title>
+  <script th:src="@{/js/layui/layui.js}"></script>
+   <link rel="stylesheet" th:href = "@{/js/layui/css/layui.css}"> 
+</head>
+<body>
+<!-- 你的HTML代码 -->
+
+	<fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+          <legend>新增员工信息</legend>
+    </fieldset>
+
+<form class="layui-form" th:action="@{insert}" method="post">
+
+
+
+    <div class="layui-form-item">
+      <label class="layui-form-label">请输入工号</label>
+      <div class="layui-input-block">
+        <input name="id" type="text" autocomplete="off" class="layui-input" lay-verify="number"></input>
+      </div>
+    </div>
+    
+    <div class="layui-form-item">
+      <label class="layui-form-label">请输入姓名</label>
+      <div class="layui-input-block">
+        <input name="name" type="text" autocomplete="off" class="layui-input"></input>
+      </div>
+    </div>
+    
+    <div class="layui-form-item">
+        <label class="layui-form-label">您的性别</label>
+        <div class="layui-input-block">
+          <input type="radio" name="sex" value="1" title="男" >
+          <input type="radio" name="sex" value="0" title="女" checked>
+        </div>
+      </div>
+      
+      <div class="layui-form-item">
+        <label class="layui-form-label">请输入工龄</label>
+        <div class="layui-input-block">
+          <input name="time" type="text" autocomplete="off" class="layui-input" ></input>  <!-- 禁用自动完成 -->
+        </div>
+      </div>
+
+      
+      <div class="layui-form-item"> <!-- 注意：这一层元素并不是必须的 -->
+        <label class="layui-form-label">请选择生日</label>
+        <input name="birth" type="text" class="layui-input" id="test1" lay-verify="date"></input>  <!-- id与js中的elem相对应 -->
+      </div>
+
+
+      <div class="layui-form-item">
+        <label class="layui-form-label">请输入工资</label>
+        <div class="layui-input-block">
+          <input name="salary" type="text" autocomplete="off" class="layui-input" lay-verify="number"></input>
+        </div>
+      </div>
+      
+        <div class="layui-form">
+        <div class="layui-form-item" id="area-picker">
+            <div class="layui-form-label">家庭住址</div>
+            <div class="layui-input-inline" style="width: 200px;">
+                <select name="home" class="province-selector" data-value="北京市" lay-filter="province-1">
+                    <option value="">请选择省</option>
+                </select>
+            </div>
+            <div class="layui-input-inline" style="width: 200px;">
+                <select name="home" class="city-selector" data-value="北京市" lay-filter="city-1">
+                    <option value="">请选择市</option>
+                </select>
+            </div>
+            <div class="layui-input-inline" style="width: 200px;">
+                <select name="home" class="county-selector" data-value="朝阳区" lay-filter="county-1">
+                    <option value="">请选择区</option>
+                </select>
+            </div>
+        </div>
+    </div>
+      
+
+    <div class="layui-form-item">
+      <div class="layui-input-block">
+        <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+      </div>
+    </div>
+
+  </form>
+</body>
+  
+
+<script>
+//一般直接写在一个js文件中
+layui.use('laydate', function(){
+  var laydate = layui.laydate;
+  
+  //执行一个laydate实例 对应日期
+  laydate.render({
+    elem: '#test1' //指定元素
+  });
+});
+
+layui.use(['layer', 'form'], function(){
+  var layer = layui.layer
+  ,form = layui.form;
+});
+
+</script> 
+ 
+<script>
+        //配置插件目录
+        layui.config({
+            base: '/js/mods/'
+        });
+        //一般直接写在一个js文件中
+        layui.use(['layer', 'form', 'layarea'], function () {
+            var layer = layui.layer  //定义layer
+                , form = layui.form
+                , layarea = layui.layarea;
+
+            layarea.render({
+                elem: '#area-picker',
+                change: function (res) {
+                    //选择结果
+                    console.log(res);  //输出结果在控制台
+                }
+            });
+        });
+    </script>
+
+</html>

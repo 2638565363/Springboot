@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gui.mapper.ArticleMapper">
+
+<insert id="insertArticle" parameterType="com.gui.entity.Article">
+	 insert into article (articlename, articleauthor, articletime) values =(#{articlename}, #{articleauthor}, #{articletime})
+</insert>
+
+<select id="selectArticle" resultType="com.gui.entity.Article">
+	select * from article
+</select>
+
+<select id="selectArticleByAuthor" parameterType="string" resultType="com.gui.entity.Article">
+	select * from article where articleauthor = #{articleauthor}
+</select>
+
+<delete id="deleteArticle" parameterType="Integer">
+	delete from article where articleId = #{articleId} 
+</delete>
+
+</mapper>

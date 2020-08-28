@@ -1,0 +1,39 @@
+Spring: 
+  dataSource: 
+    username: root
+    password: password
+    url: jdbc:mysql://localhost:3306/salary?characterEncoding=utf-8&useUnicode=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  main:
+    allow-bean-definition-overriding: true
+
+  jpa:
+    database: MYSQL 
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  thymeleaf: 
+    mode: HTML
+    #开发引擎页面，修改要实时生效，1.禁用缓存,   2.页面修改完成后重新编译
+    cache: false
+    
+  servlet:
+    multipart: 
+      maxRequestSize: 10MB
+      maxFileSize: 10MB
+
+server:   port: 8088
+  
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.gui.entity
+  configuration:
+    map-underscore-to-camel-case: true
+  
+
+logging:
+  level:
+    org:
+      springframework:
+        security : INFO
+  

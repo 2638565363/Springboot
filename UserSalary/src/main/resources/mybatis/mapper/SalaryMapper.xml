@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC 
+  "-//mybatis.org//DTD mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gui.mapper.SalaryMapper">
+  
+  <select id="listSalaryAll" resultType="com.gui.entity.Salary" parameterType="String">
+   select * from salary
+  </select>
+  
+  <select id="selectSalaryById" parameterType="String" resultType="com.gui.entity.Salary">
+  	select * from salary where id=#{id}
+  </select>
+  
+  <delete id="deleteSalary" parameterType="String">
+  	delete from salary where id=#{id}
+  </delete>
+  
+  <insert id="insertSalary" parameterType="com.gui.entity.Salary">
+  	insert into salary (id, name, sex, time, birth, salary, home) values (#{id}, #{name}, #{sex}, #{time}, #{birth}, #{salary}, #{home})
+  </insert>
+  
+  <update id="updateSalary" parameterType="com.gui.entity.Salary">
+  	update salary set id=#{id}, name=#{name}, sex=#{sex}, time=#{time}, birth=#{birth}, salary=#{salary}, home=#{home} where id=#{id}
+  </update>
+  
+</mapper>
